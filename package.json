@@ -5,9 +5,12 @@
   "private": true,
   "dependencies": {
     "egg": "^2.2.1",
+    "egg-msg-flash-panda": "^1.0.0",
     "egg-scripts": "^2.5.0",
     "egg-sequelize": "^4.1.0",
+    "egg-y-validator": "^1.1.7",
     "mysql2": "^1.6.1",
+    "ramda": "^0.25.0",
     "sequelize-cli": "^5.2.0"
   },
   "devDependencies": {
@@ -28,6 +31,7 @@
     "stop": "egg-scripts stop --title=egg-server-miao",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
+    "lint-fix": "eslint . --fix",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",

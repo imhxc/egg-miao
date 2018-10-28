@@ -7,3 +7,13 @@ exports.sequelize = {
   enable: true,
   package: 'egg-sequelize',
 };
+
+exports.falsh = {
+  enable: true,
+  package: 'egg-msg-flash-panda'
+}
+
+exports.validator = {
+  enable: true,
+  package: 'egg-y-validator'
+}
