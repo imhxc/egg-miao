@@ -12,20 +12,20 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-   return queryInterface.bulkInsert('Users', [
-     {
-       email: '505421473@qq.com',
-       password: utils.md5('000000'),
-       inviter_id: 0,
-       username: '百里',
-       weixin: '百里',
-       weibo: '百里',
-       receive_remote: 0,
-       email_verifyed: 1,
-       created_at: new Date(),
-       updated_at: new Date()
-      }
-   ])
+    return queryInterface.bulkInsert('Users', [
+      {
+        email: '505421473@qq.com',
+        password: utils.md5('000000'),
+        inviter_id: 0,
+        username: '百里',
+        weixin: '百里',
+        weibo: '百里',
+        receive_remote: 0,
+        email_verifyed: 1,
+        created_at: new Date(),
+        updated_at: new Date(),
+      },
+    ]);
   },
 
   down: (queryInterface, Sequelize) => {
@@ -36,6 +36,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('Person', null, {});
     */
-   queryInterface.bulkInsert('Users')
-  }
+    queryInterface.bulkInsert('Users');
+  },
 };

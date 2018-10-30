@@ -10,10 +10,10 @@ exports.sequelize = {
 
 exports.falsh = {
   enable: true,
-  package: 'egg-msg-flash-panda'
-}
+  package: 'egg-msg-flash-panda',
+};
 
 exports.validator = {
   enable: true,
-  package: 'egg-y-validator'
-}
+  package: 'egg-y-validator',
+};
